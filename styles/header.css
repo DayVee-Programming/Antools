@@ -45,7 +45,7 @@
 }
 
 .header__menu-item:nth-child(2):hover .header__menu-item-dropdown {
-  opacity: 1;
+  display: block;
   transform: translateY(0);
 }
 
@@ -59,7 +59,7 @@
   position: absolute;
   left: 0;
   bottom: -100px;
-  opacity: 0;
+  display: none;
   transform: translateY(100%);
   transition: 0.3s;
   background: #1E252B;
