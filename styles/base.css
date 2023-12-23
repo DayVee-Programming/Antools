@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: #1E252B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.page-container {
+  max-width: 1470px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1254px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}

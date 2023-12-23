@@ -1,0 +1,120 @@
+.cards {
+  margin-bottom: 250px;
+}
+
+.cards__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 0 16px;
+}
+
+.cards__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.cards__content-link {
+  display: flex;
+}
+
+.cards__content-link-icon {
+  transition: 0.3s;
+}
+
+.cards__content-link-icon:hover .cards__content-link-icon-svg {
+  stroke: #ff6e30;
+  stroke-opacity: 0.7;
+}
+
+.cards__content-link-icon-rotated {
+  transform: rotate(180deg);
+}
+
+.cards__content-main {
+  display: flex;
+}
+
+.cards__content-main-profile {
+  max-width: 392px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.cards__content-main-profile-desc {
+  max-width: 265px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 21px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(40, 48, 54, 0.2);
+  backdrop-filter: blur(25px);
+  position: absolute;
+  bottom: 29px;
+  right: 4px;
+}
+
+.cards__content-main-profile-desc-title {
+  color: rgba(255, 253, 253, 0.78);
+  font-size: 26px;
+  letter-spacing: 0.39px;
+}
+
+.cards__content-main-profile-desc-text {
+  color: rgba(255, 253, 253, 0.55);
+  font-weight: 400;
+}
+
+.cards__content-main-quote {
+  max-width: 496px;
+  width: 100%;
+  position: relative;
+  margin-top: 128px;
+}
+
+.cards__content-main-quote-text {
+  max-width: 393px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.21px;
+}
+
+.cards__content-main-quote-img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.cards__switch {
+  max-width: 168px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cards__switch-btn {
+  max-width: 50px;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(40, 48, 54, 1);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cards__switch-btn:hover {
+  background: #ff6e30;
+}
