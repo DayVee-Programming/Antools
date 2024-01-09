@@ -6,6 +6,7 @@
   padding-left: 111px;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .banner__main {
@@ -49,6 +50,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 121px;
+  /* flex-wrap: wrap; */
 }
 
 .banner__main-form-search {
@@ -213,4 +215,33 @@
 .banner__side-img:nth-child(19) {
   top: 248px;
   left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner__side {
+    display: none;
+  }
+
+  .banner__wrap {
+    justify-content: center;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__main-title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .banner__main-title span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner__main-form {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

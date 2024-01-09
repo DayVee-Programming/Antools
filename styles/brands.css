@@ -23,8 +23,10 @@
 
 .brands__imgs {
   display: flex;
-  gap: 107px;
+  gap: 40px 107px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brands__imgs-img-link {

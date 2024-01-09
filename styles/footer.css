@@ -5,6 +5,9 @@
 
 .footer__wrap {
   display: flex;
+  flex-wrap: wrap;
+  gap: 60px 156px;
+  justify-content: center;
 }
 
 .footer__desc {
@@ -12,7 +15,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-right: 156px;
 }
 
 .footer__desc-logo {
@@ -42,34 +44,41 @@
   color: #ff6e30;
 }
 
-.footer__info {
+.footer__main {
   display: flex;
-  flex-direction: column;
-  margin-right: 115px;
+  gap: 115px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 15px;
 }
 
-.footer__info-title {
+.footer__main-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main-info-title {
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
   margin-bottom: 20px;
   transition: 0.3s;
 }
 
-.footer__info-title:hover {
+.footer__main-info-title:hover {
   color: #ff6e30;
 }
 
-.footer__info-menu {
+.footer__main-info-menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.footer__info-menu-item-link {
+.footer__main-info-menu-item-link {
   color: rgba(255, 255, 255, 0.55);
   transition: 0.3s;
 }
 
-.footer__info-menu-item-link:hover {
+.footer__main-info-menu-item-link:hover {
   color: #ff6e30;
 }

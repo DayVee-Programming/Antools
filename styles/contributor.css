@@ -26,9 +26,12 @@
 }
 
 .contributor__form {
+  max-width: 549px;
   width: 100%;
   padding: 8px 12px;
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
@@ -60,4 +63,16 @@
 .contributor__form-btn:hover {
   color: #ff6e30;
   background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .contributor__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .contributor__form {
+    justify-content: center;
+  }
 }
