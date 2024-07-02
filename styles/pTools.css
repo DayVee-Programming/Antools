@@ -67,6 +67,11 @@
   margin-bottom: 31px;
 }
 
+.pTools__cards-card-product-img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
 .pTools__cards-card-product-desc {
   display: flex;
   flex-direction: column;

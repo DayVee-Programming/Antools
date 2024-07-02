@@ -116,6 +116,8 @@
   position: absolute;
   cursor: pointer;
   transition: 1.3s;
+  width: unset;
+  height: unset;
 }
 
 .banner__side-img:hover {

@@ -82,6 +82,11 @@
   margin-bottom: 30px;
 }
 
+.nTools__cards-card-product-img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
 .nTools__cards-card-product-desc {
   display: flex;
   flex-direction: column;
