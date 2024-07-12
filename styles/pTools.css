@@ -10,8 +10,7 @@
 }
 
 .pTools__desc {
-  max-width: 455px;
-  width: 100%;
+  width: min(100%, 455px);
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -40,8 +39,7 @@
 }
 
 .pTools__cards-card {
-  max-width: 392px;
-  width: 100%;
+  width: min(100%, 392px);
   padding: 33px;
   border-radius: 15px;
   background: #1e252b;

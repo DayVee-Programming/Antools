@@ -10,8 +10,7 @@
 }
 
 .nTools__desc {
-  max-width: 401px;
-  width: 100%;
+  width: min(100%, 401px);
   display: flex;
   flex-direction: column;
 }
@@ -31,8 +30,7 @@
 }
 
 .nTools__desc-link {
-  max-width: 198px;
-  width: 100%;
+  width: min(100%, 198px);
   padding: 16px 40px;
   color: #fff;
   font-size: 18px;
@@ -47,8 +45,7 @@
 }
 
 .nTools__cards {
-  max-width: 600px;
-  width: 100%;
+  width: min(100%, 600px);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -56,8 +53,7 @@
 }
 
 .nTools__cards-card {
-  max-width: 288px;
-  width: 100%;
+  width: min(100%, 288px);
   padding: 28px 21px;
   border-radius: 15px;
   background: #1e252b;

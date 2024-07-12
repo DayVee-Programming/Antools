@@ -30,8 +30,7 @@
 }
 
 .header__bars span {
-  max-width: 45px;
-  width: 100%;
+  width: min(100%, 45px);
   height: 4px;
   background: rgba(255, 255, 255, 0.55);
   display: flex;
@@ -125,8 +124,7 @@
 }
 
 .header__menu-item-dropdown {
-  max-width: 100px;
-  width: 100%;
+  width: min(100%, 100px);
   position: absolute;
   left: 0;
   bottom: -100px;

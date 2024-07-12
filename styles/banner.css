@@ -10,8 +10,7 @@
 }
 
 .banner__main {
-  max-width: 600px;
-  width: 100%;
+  width: min(100%, 600px);
   display: flex;
   flex-direction: column;
 }
@@ -30,8 +29,7 @@
 }
 
 .banner__main-text {
-  max-width: 487px;
-  width: 100%;
+  width: min(100%, 487px);
   color: rgba(255, 255, 255, 0.55);
   font-size: 18px;
   font-weight: 400;
@@ -40,8 +38,7 @@
 }
 
 .banner__main-form {
-  max-width: 498px;
-  width: 100%;
+  width: min(100%, 498px);
   border-radius: 15px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   background: #283036;
@@ -106,8 +103,7 @@
 }
 
 .banner__side {
-  max-width: 589px;
-  width: 100%;
+  width: min(100%, 589px);
   position: relative;
   overflow: hidden;
 }

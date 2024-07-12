@@ -3,8 +3,7 @@
 }
 
 .contributor__wrap {
-  max-width: 600px;
-  width: 100%;
+  width: min(100%, 600px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,8 +25,7 @@
 }
 
 .contributor__form {
-  max-width: 549px;
-  width: 100%;
+  width: min(100%, 549px);
   padding: 8px 12px;
   display: flex;
   gap: 20px;

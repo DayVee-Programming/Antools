@@ -6,10 +6,14 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  background: #1E252B;
+  background: #1e252b;
 }
 
 h1,
@@ -28,18 +32,26 @@ img {
   height: 100%;
 }
 
-.page-container {
-  max-width: 1470px;
-  width: 100%;
-  height: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+a {
+  cursor: pointer;
 }
 
-.container {
-  max-width: 1254px;
-  width: 100%;
+address {
+  font-style: normal;
+}
+
+/* original container for a full webpage */
+.full-container {
+  width: min(100%, 1470px);
   height: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* container for a webpage with margin of 108px from left and right compared to original container */
+.container {
+  width: min(100%, 1254px);
+  height: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
 }
