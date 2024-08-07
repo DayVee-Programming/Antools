@@ -47,7 +47,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 121px;
-  /* flex-wrap: wrap; */
+  transition: 0.3s;
+}
+
+.banner__main-form:hover {
+  scale: 1.05;
 }
 
 .banner__main-form-search {
@@ -60,7 +64,8 @@
   display: flex;
 }
 
-.banner__main-form-search-link-icon:hover .banner__main-form-search-link-icon-svg {
+.banner__main-form-search-link-icon:hover
+  .banner__main-form-search-link-icon-svg {
   stroke: #ff6e30;
 }
 
@@ -116,8 +121,17 @@
   height: unset;
 }
 
-.banner__side-img:hover {
-  transform: translate(-30%, 0);
+.banner__side-img {
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .banner__side-img:first-child {

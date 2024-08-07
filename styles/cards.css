@@ -5,7 +5,7 @@
 .cards__wrap {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 70px;
   padding: 0 16px;
 }
 
@@ -16,26 +16,57 @@
   padding: 0 15px;
 }
 
-.cards__content-link {
+.cards__content-link-left,
+.cards__content-link-right {
   display: flex;
 }
 
-.cards__content-link-icon {
+.cards__content-link-left-icon path,
+.cards__content-link-right-icon path {
   transition: 0.3s;
 }
 
-.cards__content-link-icon:hover .cards__content-link-icon-svg {
+.cards__content-link-left-icon:hover.cards__content-link-left-icon path {
   stroke: #ff6e30;
   stroke-opacity: 0.7;
 }
 
-.cards__content-link-icon-rotated {
+.cards__content-link-right-icon:hover.cards__content-link-right-icon path {
+  stroke: #ff6e30;
+  stroke-opacity: 0.7;
+}
+
+.cards__content-link-right-icon-rotated {
   transform: rotate(180deg);
 }
 
-.cards__content-main {
+.cards__content-slider {
   display: flex;
+  overflow-x: auto;
+}
+
+.cards__content-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.cards__content-main {
+  display: none;
   gap: 15px;
+  justify-content: center;
+}
+
+.cards__content-main.show {
+  display: flex;
+  animation: slide-left 0.5s;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cards__content-main-profile {
@@ -46,6 +77,10 @@
 
 .cards__content-main-profile-pic {
   position: relative;
+}
+
+.cards__content-main-profile-pic-img {
+  border-radius: 50%;
 }
 
 .cards__content-main-profile-pic-bg {
@@ -116,9 +151,10 @@
 .cards__switch {
   width: min(100%, 168px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
+  gap: 10px;
 }
 
 .cards__switch-btn {

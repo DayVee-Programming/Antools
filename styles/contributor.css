@@ -35,6 +35,11 @@
   border-radius: 15px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   background: #283036;
+  transition: 0.3s;
+}
+
+.contributor__form:hover {
+  transform: scale(1.05);
 }
 
 .contributor__form-input {

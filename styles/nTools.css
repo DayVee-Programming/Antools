@@ -63,12 +63,19 @@
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(-200px);
 }
 
 .nTools__cards-card:hover {
-  transform: translateY(-10px);
   background: rgba(40, 48, 54, 0.6);
   backdrop-filter: blur(25px);
+}
+
+.nTools__cards-card.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .nTools__cards-card-product {
@@ -132,7 +139,7 @@
   color: #fff;
 }
 
-.nTools__cards-card:hover .pTools__cards-card-interact-icons-icon1-svg {
+.nTools__cards-card:hover.nTools__cards-card-interact-icons-icon1-svg {
   fill: #FD3B41;
   fill-opacity: 1;
 }

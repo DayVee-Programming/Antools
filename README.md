@@ -4,11 +4,11 @@ Antools is a web collection of information on paid or free Design and Developmen
 
 ## Screenshots from the project
 
-<img src="/images/screenshot1.jpg" />
+<img src="/images/screenshot1.png" />
 <hr>
-<img src="/images/screenshot2.jpg" />
+<img src="/images/screenshot2.png" />
 <hr>
-<img src="/images/screenshot3.jpg" />
+<img src="/images/screenshot3.png" />
 
 ## How to run the project 
 

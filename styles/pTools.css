@@ -32,8 +32,8 @@
 }
 
 .pTools__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-bottom: 100px;
 }
@@ -50,12 +50,18 @@
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transform: translateX(-200px);
 }
 
 .pTools__cards-card:hover {
-  transform: translateY(-10px);
   background: rgba(40, 48, 54, 0.6);
   backdrop-filter: blur(25px);
+}
+
+.pTools__cards-card.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .pTools__cards-card-product {
@@ -106,8 +112,20 @@
   align-items: center;
 }
 
-.pTools__cards-card:hover .pTools__cards-card-interact-icons-icon1-svg {
-  fill: #FD3B41;
+.pTools__cards-card-interact-icons-icon1-svg,
+.pTools__cards-card-interact-icons-icon2 path {
+  transition: 0.3s;
+}
+
+.pTools__cards-card-interact-icons-icon1:hover
+  .pTools__cards-card-interact-icons-icon1-svg {
+  fill: #fd3b41;
+  fill-opacity: 1;
+}
+
+.pTools__cards-card-interact-icons-icon2:hover.pTools__cards-card-interact-icons-icon2
+  path {
+  fill: #fd3b41;
   fill-opacity: 1;
 }
 
@@ -120,7 +138,7 @@
   transition: 0.3s;
 }
 
-.pTools__cards-card:hover .pTools__cards-card-interact-link {
+.pTools__cards-card-interact-link:hover.pTools__cards-card-interact-link {
   background: rgba(255, 110, 48, 1);
   color: #fff;
 }
@@ -155,14 +173,19 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 992px) {
   .pTools__cards {
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
 
 @media screen and (max-width: 768px) {
   .pTools__desc-title {
     font-size: 30px;
+  }
+
+  .pTools__cards {
+    grid-template-columns: 1fr;
   }
 }
